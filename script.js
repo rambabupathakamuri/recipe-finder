@@ -1,74 +1,43 @@
-function searchRecipes() {
-    const ingredientInput = document.getElementById('ingredient-input').value;
-    const ingredients = ingredientInput.split(',').map(ingredient => ingredient.trim().toLowerCase());
-    
-    // Indian recipes data
-    const recipes = [
-        {
-            id: "1",
-            name: "Chicken Biryani",
-            image: "assets/images/chicken_biryani.jpg",
-            description: "A flavorful and aromatic rice dish made with basmati rice, spices, and chicken.",
-            ingredients: ["chicken", "rice", "yogurt", "onion", "garlic", "ginger", "spices"]
-        },
-        {
-            id: "2",
-            name: "Palak Paneer",
-            image: "assets/images/palak_paneer.jpg",
-            description: "A popular vegetarian dish made with spinach and paneer (Indian cottage cheese).",
-            ingredients: ["spinach", "paneer", "onion", "tomato", "garlic", "ginger", "spices"]
-        },
-        {
-            id: "3",
-            name: "Masala Dosa",
-            image: "assets/images/masala_dosa.jpg",
-            description: "A crispy rice and lentil crepe filled with spiced potato filling, served with chutney and sambar.",
-            ingredients: ["rice", "lentils", "potato", "onion", "mustard seeds", "turmeric"]
-        },
-        {
-            id: "4",
-            name: "Butter Chicken",
-            image: "assets/images/butter_chicken.jpg",
-            description: "A rich and creamy tomato-based curry made with marinated chicken.",
-            ingredients: ["chicken", "tomato", "butter", "cream", "garlic", "ginger", "spices"]
-        },
-        {
-            id: "5",
-            name: "Chole Bhature",
-            image: "assets/images/chole_bhature.jpg",
-            description: "A North Indian dish consisting of spicy chickpeas served with deep-fried bread.",
-            ingredients: ["chickpeas", "onion", "tomato", "garlic", "ginger", "spices", "flour"]
-        }
-    ];
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recipe Finder</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Recipe Finder</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
 
-    const filteredRecipes = recipes.filter(recipe => {
-        return ingredients.every(ingredient => recipe.ingredients.includes(ingredient));
-    });
+    <main>
+        <section id="search">
+            <h2>Find Recipes by Dish Name</h2>
+            <input type="text" id="dish-input" placeholder="Enter dish name">
+            <button onclick="searchRecipes()">Search</button>
+        </section>
 
-    displayRecipes(filteredRecipes);
-}
+        <section id="menu">
+            <h2>Menu</h2>
+            <div id="menu-list"></div>
+        </section>
 
-function displayRecipes(recipes) {
-    const recipeList = document.getElementById('recipe-list');
-    recipeList.innerHTML = ''; // Clear previous results
+        <section id="results">
+            <h2>Recipe Results</h2>
+            <div id="recipe-list"></div>
+        </section>
+    </main>
 
-    if (recipes.length === 0) {
-        recipeList.innerHTML = '<p>No recipes found. Try different ingredients.</p>';
-    } else {
-        recipes.forEach(recipe => {
-            const recipeCard = document.createElement('div');
-            recipeCard.classList.add('recipe-card');
-            recipeCard.innerHTML = `
-                <h3>${recipe.name}</h3>
-                <img src="${recipe.image}" alt="${recipe.name}" style="width:100%; height:auto;">
-                <p>${recipe.description}</p>
-                <button onclick="viewRecipe('${recipe.id}')">View Recipe</button>
-            `;
-            recipeList.appendChild(recipeCard);
-        });
-    }
-}
+    <footer>
+        <p>&copy; 2024 Recipe Finder. All Rights Reserved.</p>
+    </footer>
 
-function viewRecipe(recipeId) {
-    alert("You clicked on recipe with ID: " + recipeId);
-}
+    <script src="script.js"></script>
+</body>
+</html>
