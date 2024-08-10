@@ -3,49 +3,61 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Restaurant Name</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Indian Food Palace - Boston</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
-        <h1>Welcome to Indian Food</h1>
+        <h1>Indian Food Palace</h1>
         <nav>
-            <a href="index.html">Home</a>
-            <a href="menu.html">Menu</a>
-            <a href="about.html">About</a>
-            <a href="contact.html">Contact</a>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#menu">Menu</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
         </nav>
     </header>
 
-    <main>
-        <section id="intro">
-            <h2>Delicious Food, Cozy Atmosphere</h2>
-            <p>Come and enjoy our exquisite dishes, crafted with the freshest ingredients and served in a warm and welcoming setting.</p>
-            <img src="assets/images/restaurant_interior.jpg" alt="Restaurant Interior">
-        </section>
+    <section id="home">
+        <h2>Welcome to Indian Food Palace</h2>
+        <p>Experience the authentic taste of India right here in Boston. Our chefs prepare each dish with the finest ingredients, bringing you the rich flavors of traditional Indian cuisine.</p>
+        <img src="restaurant.jpg" alt="Indian Food Palace Restaurant" class="home-image">
+    </section>
 
-        <section id="featured">
-            <h2>Featured Dishes</h2>
-            <div class="dish-card">
-                <h3>Chicken Biryani</h3>
-                <img src="assets/images/dish1.jpg" alt="Dish 1">
-                <p>a celebratory rice and meat dish cherished in the Indian sub-continent. A traditional biryani consists of fluffy basmati rice layered over tender & succulent pieces of meat, accompanied with the mesmerizing aromas of spices, herbs & caramelized onions..</p>
-            </div>
-            <div class="dish-card">
-                <h3>Goat Biryani</h3>
-                <img src="assets/images/dish2.jpg" alt="Dish 2">
-                <p>Tender marinated mutton chunks are roasted along with a host of authentic spices like cardamom, cinnamon, jaiphal, star anise, ginger, garlic, cumin, clove, then layered with saffron-milk infused long grain basmati rice in a deep potted clay vessel called handi..</p>
-            </div>
-            <div class="dish-card">
-                <h3>Boneless Chicken Biryani</h3>
-                <img src="assets/images/dish3.jpg" alt="Dish 3">
-                <p>Biryani is known for its aroma and flavor. Fresh herbs, saffron, and basmati rice give it a sweet-floral aroma that hits the nose before you taste it. Whole garam masala, fried onions, and marinated meat provide warmth and subtle heat to the dish. Overall, it tastes like a savory, spiced rice pilaf.</p>
-            </div>
-        </section>
-    </main>
+    <section id="menu">
+        <h2>Our Menu</h2>
+        <ul>
+            <li><strong>Chicken Biryani:</strong> A fragrant basmati rice dish cooked with tender chicken, aromatic spices, and herbs.</li>
+            <li><strong>Veg Biryani:</strong> A vegetarian version of our biryani, loaded with fresh vegetables and spices.</li>
+            <li><strong>Paneer Biryani:</strong> A delightful mix of paneer (Indian cottage cheese) and basmati rice, cooked with spices.</li>
+            <li><strong>Goat Biryani:</strong> A rich and flavorful biryani made with tender goat meat and a blend of spices.</li>
+            <li><strong>Lassi:</strong> A refreshing yogurt-based drink, available in sweet or salty flavors.</li>
+            <li><strong>Coke:</strong> Your favorite fizzy drink to complement your meal.</li>
+        </ul>
+    </section>
+
+    <section id="about">
+        <h2>About Us</h2>
+        <p>Indian Food Palace brings you the finest Indian cuisine, with recipes passed down through generations. Located in the heart of Boston, we pride ourselves on our delicious and authentic flavors. Our chefs are experts in traditional Indian cooking, and we use only the freshest ingredients to ensure the highest quality in every dish.</p>
+        <p>We offer a warm and welcoming environment, perfect for family dinners, casual outings, and special occasions. Our staff is dedicated to providing you with the best dining experience, from the moment you walk through our doors to the last bite of your meal.</p>
+        <img src="chef.jpg" alt="Chef at Indian Food Palace" class="about-image">
+    </section>
+
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <p>If you have any questions or would like to make a reservation, please feel free to reach out to us:</p>
+        <p>Email: <a href="mailto:info@indianfoodpalace.com">info@indianfoodpalace.com</a></p>
+        <p>Phone: <a href="tel:+15551234567">(555) 123-4567</a></p>
+        <p>Address: 123 Flavor Street, Boston, MA</p>
+        <div id="map"></div>
+    </section>
 
     <footer>
-        <p>&copy; 2024 Indian Food. All Rights Reserved.</p>
+        <p>&copy; 2024 Indian Food Palace. All rights reserved.</p>
+        <p>Follow us on <a href="https://www.facebook.com" target="_blank">Facebook</a>, <a href="https://www.instagram.com" target="_blank">Instagram</a>, and <a href="https://www.twitter.com" target="_blank">Twitter</a>.</p>
     </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
