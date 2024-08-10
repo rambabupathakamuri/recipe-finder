@@ -23,22 +23,18 @@ nav a:hover {
     text-decoration: underline;
 }
 
-#search {
+#search, #menu, #results {
     padding: 20px;
     text-align: center;
 }
 
-#results {
-    padding: 20px;
-}
-
-#recipe-list {
+#menu-list, #recipe-list {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
 }
 
-.recipe-card {
+.menu-item, .recipe-card {
     background-color: #ffffff;
     border: 1px solid #ddd;
     margin: 10px;
