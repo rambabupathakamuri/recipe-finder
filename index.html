@@ -3,41 +3,49 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Recipe Finder</title>
+    <title>Restaurant Name</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
-        <h1>Recipe Finder</h1>
+        <h1>Welcome to [Restaurant Name]</h1>
         <nav>
             <a href="index.html">Home</a>
+            <a href="menu.html">Menu</a>
             <a href="about.html">About</a>
             <a href="contact.html">Contact</a>
         </nav>
     </header>
 
     <main>
-        <section id="search">
-            <h2>Find Recipes by Dish Name</h2>
-            <input type="text" id="dish-input" placeholder="Enter dish name">
-            <button onclick="searchRecipes()">Search</button>
+        <section id="intro">
+            <h2>Delicious Food, Cozy Atmosphere</h2>
+            <p>Come and enjoy our exquisite dishes, crafted with the freshest ingredients and served in a warm and welcoming setting.</p>
+            <img src="assets/images/restaurant_interior.jpg" alt="Restaurant Interior">
         </section>
 
-        <section id="menu">
-            <h2>Menu</h2>
-            <div id="menu-list"></div>
-        </section>
-
-        <section id="results">
-            <h2>Recipe Results</h2>
-            <div id="recipe-list"></div>
+        <section id="featured">
+            <h2>Featured Dishes</h2>
+            <div class="dish-card">
+                <h3>Dish Name 1</h3>
+                <img src="assets/images/dish1.jpg" alt="Dish 1">
+                <p>A brief description of Dish 1.</p>
+            </div>
+            <div class="dish-card">
+                <h3>Dish Name 2</h3>
+                <img src="assets/images/dish2.jpg" alt="Dish 2">
+                <p>A brief description of Dish 2.</p>
+            </div>
+            <div class="dish-card">
+                <h3>Dish Name 3</h3>
+                <img src="assets/images/dish3.jpg" alt="Dish 3">
+                <p>A brief description of Dish 3.</p>
+            </div>
         </section>
     </main>
 
     <footer>
-        <p>&copy; 2024 Recipe Finder. All Rights Reserved.</p>
+        <p>&copy; 2024 [Restaurant Name]. All Rights Reserved.</p>
     </footer>
-
-    <script src="script.js"></script>
 </body>
 </html>
