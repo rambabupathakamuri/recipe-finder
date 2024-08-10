@@ -19,6 +19,10 @@ nav a {
     text-decoration: none;
 }
 
+nav a:hover {
+    text-decoration: underline;
+}
+
 #search {
     padding: 20px;
     text-align: center;
@@ -42,4 +46,14 @@ nav a {
     width: 300px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     text-align: center;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #35424a;
+    color: #ffffff;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
 }
